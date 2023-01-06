@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Minesweeper</title>
+
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./css/minesweeper.css">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<img src="./assets/menu.png" class="col-lg-4 col-sm-4" id="menu" onclick="activateOptions()">
+				<div class="col-lg-8 col-sm-8 text-center">
+					<p class="font-weight-bold" id="title">Minesweeper</p>
+				</div>
+				
+			</div>
+			<div class="row" id="body">
+
+				<div class="col-lg-9 text-center" id="game">
+
+					<canvas id="canvas">Please update your browser.</canvas>
+
+				</div>
+
+				<div class="col-lg-3 text-center" id="scores">
+
+					
+					<br>
+					<p class="h4 font-weight-bold">Expert</p>
+					<div id="expert"></div>
+					<br>
+					<p class="h4 font-weight-bold">Intermediate</p>
+					<div id="intermediate"></div>
+					<br>
+					<p class="h4 font-weight-bold">Beginner</p>
+					<div id="beginner"></div>
+
+				</div>
+
+				
+				
+			</div>
+		</div>
+		
+		
+		<div id="overlay">
+		<!-- Overlay -->
+
+			<div class="overlayInterface text-center justify-content-around" id="endGame">
+
+				<button class="h4" id="closeButton" onclick="overlayOff()">Close Window</button>
+				<p class="h3">You won!</p>
+				<p class="h5" id="difficulty"></p>
+				<p class="h5" id="timeNeeded"></p>
+				<div id="noCustom">
+					<div>
+						<p class="h6">Enter a name to submit your score</p>
+						<input class="text-center" id="usernameSubmit" type="" name="">
+					</div>
+					<br>
+					<button class="h3" id="submitScore" onclick="submitScore()">Submit Score</button>
+				</div>
+			</div>
+
+			<div class="overlayInterface" id="options">
+
+				<button class="h4" id="closeButton" onclick="overlayOff()">Close Window</button>
+
+				<div class="d-flex flex-row">
+
+					<div class="text-center flex-grow-1" id="buttons">
+						<p class="h4 font-weight-bold">Custom Game</p>
+
+						<p class="h5">Width</p><input type="number" id="width">
+						<br>
+						<p class="h5">Height</p><input type="number" id="height">
+						<br>
+						<p class="h5">Mines</p><input type="number" id="mines">
+						<br>
+						<button class="h2" id="Custom" onclick="changeGameParameters(this.id)">Change</button>
+					</div>
+
+					<div class="text-center flex-grow-1" id="modes">
+						<p class="h4 font-weight-bold">Level</p>
+						<button class="h3 selected" id="Beginner" onclick="setLevel(8, 8, 10, this.id)">Beginner</button>
+						<br>
+						<button class="h3 notSelected" id="Intermediate" onclick="setLevel(16, 16, 40, this.id)">Intermediate</button>
+						<br>
+						<button class="h3 notSelected" id="Expert" onclick="setLevel(30, 16, 99, this.id)">Expert</button>
+						<div>
+							
+						</div>
+						<br>
+
+						<p class="h3 font-weight-bold">Modes</p>
+						<button class="h3 notSelected" id="noFlags" onclick="noFlagMode()">No Flag Mode</button>
+						<br>
+						<button class="h3 notSelected" id="noMistakes" onclick="noMistakesMode()">No Mistakes Mode</button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+
+	<script src="src/firebase.js"></script>
+	<script src="src/interface_ui.js"></script>
+	<script src="src/app.js"></script>
+
+</html>
