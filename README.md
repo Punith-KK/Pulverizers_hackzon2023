@@ -1,6 +1,6 @@
 # Pulverizers_hackzon2023
 
-## [Live Site](https://punith-kk.github.io/Pulverizers_hackzon2023/Basic%20Portfolio%20Website/index.html)
+## [Live Site](https://punith-kk.github.io/Pulverizers_hackzon2023/Basic_Portfolio_Website/index.html)
 ## [Demo Video](https://youtu.be/geF-LGQRvQk)
 ## [Devfolio Project Link](https://devfolio.co/projects/mind-development-web-app-for-everyone-e77d)
 
