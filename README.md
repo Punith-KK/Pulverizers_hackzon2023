@@ -10,6 +10,9 @@ The Juvenile category includes 5 games namely 1.Drum(Learning Music) 2.Let's Pra
 For adults it includes 1.Piano(Advanced Music play) 2.Fruit-Slice Game(Quick reflex) 3.Quiz App(General Knowledge) 4.Typing Champ 5.Minesweeper Game
 We even added nice animations and transistions to make our website look prettier and attractive for our viewers.
 We made sure that all of our links are accessible and even tested those games to make sure that there is no error in our games.
+
+![image](https://github.com/Punith-KK/Pulverizers_hackzon2023/assets/118302022/e5b67ab1-9045-4424-b300-61ae582692a2)
+
 Thank You....Enjoy our Project
 
 
