@@ -2,6 +2,7 @@
 
 ## [Live Site](https://punith-kk.github.io/Pulverizers_hackzon2023/Basic%20Portfolio%20Website/index.html)
 ## [Demo Video](https://youtu.be/geF-LGQRvQk)
+## [Devfolio Project Link](https://devfolio.co/projects/mind-development-web-app-for-everyone-e77d)
 
 ## The problem Mind Development solves
 Nowadays, people are wasting their precious time by using social media. Hence its our responsibility to train our mind and keep it active.
